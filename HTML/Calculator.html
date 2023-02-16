@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #calculator {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #444;
+        color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        width: 400px;
+        height: 500px;
+        margin: 50px auto;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      #display {
+        background-color: #333;
+        color: #fff;
+        font-size: 48px;
+        /* padding: 20px 0; */
+        border-radius: 10px 10px 0 0;
+        text-align: right;
+        height: 120px;
+      }
+
+      .keyrow {
+        display: flex;
+      }
+
+      .number,
+      .operator,
+      .function {
+        width: 75px;
+        height: 60px;
+        border: 1px solid #333;
+        background-color: #fff;
+        color: #333;
+        border-radius: 5px;
+        float: left;
+        margin: 10px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .operator {
+        background-color: #f00;
+        color: #fff;
+      }
+
+      .function {
+        background-color: rgb(47, 0, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="display">0</div>
+      <div class="keyrow">
+        <button id="clear" class="function">AC</button>
+        <button id="neg" class="function">&plusmn;</button>
+        <button id="percent" class="function">%</button>
+        <button id="divide" class="operator">&divide;</button>
+      </div>
+      <div class="keyrow">
+        <button id="seven" class="number">7</button>
+        <button id="eight" class="number">8</button>
+        <button id="nine" class="number">9</button>
+        <button id="multiply" class="operator">&times;</button>
+      </div>
+      <div class="keyrow">
+        <button id="four" class="number">4</button>
+        <button id="five" class="number">5</button>
+        <button id="six" class="number">6</button>
+        <button id="subtract" class="operator">&minus;</button>
+      </div>
+      <div class="keyrow">
+        <button id="one" class="number">1</button>
+        <button id="two" class="number">2</button>
+        <button id="three" class="number">3</button>
+        <button id="add" class="operator">&plus;</button>
+      </div>
+      <div class="keyrow">
+        <button id="zero" class="number">0</button>
+        <button id="decimal" class="number">.</button>
+        <button id="equals" class="operator">=</button>
+      </div>
+    </div>
+    <!-- <script>
+      const display = document.getElementById("display");
+      let firstOperand = "";
+      let secondOperand = "";
+      let operator = "";
+
+      document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("number")) {
+          if (!operator) {
+            firstOperand += event.target.innerText;
+            display.innerText = firstOperand;
+          } else {
+            secondOperand += event.target.innerText;
+            display.innerText = secondOperand;
+          }
+        } else if (event.target.classList.contains("operator")) {
+          operator = event.target.innerText;
+        } else if (event.target.id === "equals") {
+          firstOperand = parseFloat(firstOperand);
+          secondOperand = parseFloat(secondOperand);
+          switch (operator) {
+            case "+":
+              display.innerText = firstOperand + secondOperand;
+              break;
+            case "-":
+              display.innerText = firstOperand - secondOperand;
+              break;
+            case "&times;":
+              display.innerText = firstOperand * secondOperand;
+              break;
+            case "&divide;":
+              display.innerText = firstOperand / secondOperand;
+              break;
+            default:
+              display.innerText = "Error";
+              break;
+          }
+          firstOperand = "";
+          secondOperand = "";
+          operator = "";
+        } else if (event.target.id === "clear") {
+          firstOperand = "";
+          secondOperand = "";
+          operator = "";
+          display.innerText = 0;
+        }
+      });
+    </script> -->
+  </body>
+</html>

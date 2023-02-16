@@ -1,0 +1,44 @@
+div#container {
+    border: 1px solid;
+  }
+  div#headSection {
+    background-color: black;
+    color: white;
+    margin: 0 10px 0 10px;
+  }
+  #headSection h2 {
+    text-align: center;
+    padding: 15px;
+    /* font-size: 32px; */
+  }
+  div#parent {
+    overflow: auto;
+    margin: 10px;
+  }
+  div#listDiv {
+    width: 200px;
+    float: left;
+    background: lightgrey;
+    height: 150px;
+  }
+  #parent ul {
+    list-style-type: none;
+  }
+  #parent ul li {
+    line-height: 1.7;
+  }
+  div#contentDiv {
+    float: right;
+    margin-left: 15px;
+    width: 701px;
+  }
+  div#footer {
+    background: black;
+    color: white;
+    margin: 0 10px 0 10px;
+  }
+  p#footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
