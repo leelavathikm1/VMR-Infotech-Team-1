@@ -1,0 +1,45 @@
+div#headeSection {
+    background-color: black;
+    overflow: auto;
+    color: white;
+}
+header {
+    width: 700px;
+    margin: auto;
+}
+div#headerBasic {
+    width: 267px;
+    float: left;
+    margin: 10px 0 0 0;
+}
+#headerBasic h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+#headerBasic p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+nav {
+    width: 413px;
+    float: right;
+    background: gray;
+    margin: 10px;
+}
+header nav ul li {
+    display: inline;
+    font-size: 8px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+div#imageSection {
+    width: 700px;
+    margin: auto;
+    margin-top: 10px;
+}
+#imageSection img {
+    width: 693px;
+    height: 360px;
+}
